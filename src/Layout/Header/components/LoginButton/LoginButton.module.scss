@@ -1,0 +1,27 @@
+.loginButton{
+    font-size: 16px;
+    width: 110px;
+    height: 50px;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-weight: 700;
+
+    &:hover{
+        background: var(--orange);
+        color: var(--white);
+
+        & svg path{
+            margin-right: 7px;
+            stroke: var(--white);
+        }
+    }
+
+    svg path{
+        stroke: var(--orange);
+        transition: 0.4s;
+    }
+    
+    svg{
+        margin-right: 7px;
+    }
+}
