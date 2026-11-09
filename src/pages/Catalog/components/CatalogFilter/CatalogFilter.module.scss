@@ -1,0 +1,23 @@
+.catalogFilter{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border-radius: 15px;
+    background: var(--gray-light-2);
+    padding: 0px 5px;
+}
+
+.catalogFilterButtonActive{
+    padding: 0px 24px;
+    background: var(--white);
+    border-radius: 15px;
+    height: 43px;
+    font-weight: 700;
+}
+
+.catalogFilterButton{
+    padding: 0px 24px;
+    border-radius: 15px;
+    height: 43px;
+    font-weight: 700;
+}

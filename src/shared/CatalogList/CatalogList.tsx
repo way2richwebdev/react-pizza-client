@@ -4,9 +4,9 @@ import styles from './CatalogList.module.scss'
 const CatalogList = () => {
   return (
     <ul className={styles.catalogList}>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
     </ul>
   )
 }

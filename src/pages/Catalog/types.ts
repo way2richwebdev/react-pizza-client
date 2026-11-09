@@ -1,0 +1,1 @@
+export type SortValue = 'default' | 'priceHigher' | 'priceLower' | 'rating';

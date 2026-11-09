@@ -1,0 +1,86 @@
+.catalogSortValue{
+    background: var(--gray-light-2);
+    border-radius: 15px;
+    width: 280px;
+    font-weight: 700;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.catalogSortValueActive{
+    border-radius: 15px;
+    width: 280px;
+    font-weight: 700;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+
+    span{
+        margin-left: 5px;
+        color: var(--white);
+    }
+}
+
+.catalogSortValue{
+    span{
+        margin-left: 5px;
+        color: var(--orange);
+    }
+}
+
+.catalogSort{
+    position: relative;
+}
+
+.catalogSortList{
+    position: absolute;
+    bottom: -177px;
+    left: 0;
+    width: 280px;
+    background: var(--gray-light-2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.catalogSortListActive{
+    position: absolute;
+    bottom: -177px;
+    left: 0;
+    width: 280px;
+    background: var(--gray-light-2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    padding: 15px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+
+.catalogSortListButton{
+    padding: 15px 0px;
+    width: 100%;
+    &:hover{
+        background: var(--white);
+    }
+}

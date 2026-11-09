@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container">
           <div className={styles.headerContent}>
             <img src={logo} alt="React Pizza" />
-            <Search/>
+            {/* <Search/> */}
             <div className="headerActions">
               <LoginButton/>
             </div>
