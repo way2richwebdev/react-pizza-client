@@ -1,12 +1,17 @@
+import { Product } from '../../types/Product'
 import ProductCard from '../ProductCard/ProductCard'
 import styles from './CatalogList.module.scss'
 
-const CatalogList = () => {
+type CatalogList = {
+  products: Product[];
+}
+
+const CatalogList = ({products}: CatalogList) => {
   return (
     <ul className={styles.catalogList}>
-      <ProductCard/>
-      <ProductCard/>
-      <ProductCard/>
+      {products.map((el) => (
+        <ProductCard key={el.id} {...el}/>  
+      ))}
     </ul>
   )
 }

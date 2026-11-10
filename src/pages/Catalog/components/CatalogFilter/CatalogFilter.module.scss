@@ -13,6 +13,7 @@
     border-radius: 15px;
     height: 43px;
     font-weight: 700;
+    color: var(--orange);
 }
 
 .catalogFilterButton{
@@ -20,4 +21,9 @@
     border-radius: 15px;
     height: 43px;
     font-weight: 700;
+    transition: 0.4s;
+
+    &:hover{
+        background: var(--white);
+    }
 }

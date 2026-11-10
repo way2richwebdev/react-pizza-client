@@ -1,12 +1,11 @@
 import { sortValues, sortValuesButtons } from './data';
 import useCatalogSort from './hooks';
 import styles from './CatalogSort.module.scss'
-import React, { SetStateAction } from 'react';
 import { SortValue } from '../../types';
 
 type CatalogSort = {
   sortValue: SortValue,
-  setSortValue: React.Dispatch<SetStateAction<SortValue>>
+  setSortValue: React.Dispatch<React.SetStateAction<SortValue>>
 }
 
 const CatalogSort = ({sortValue, setSortValue}: CatalogSort) => {

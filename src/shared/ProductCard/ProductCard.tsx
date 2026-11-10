@@ -1,20 +1,22 @@
+import { Product } from '../../types/Product';
 import { Settings } from './icons/icons';
 import styles from './ProductCard.module.scss';
 
-const ProductCard = () => {
+const ProductCard = (props: Product) => {
   return (
     <li className={styles.productCard}>
         <div className={styles.productCardPreviewWrapper}>
             <a href='#' className={styles.settingIcon}>
                 <Settings/>    
             </a>
-            <img className='productCardPreview' src='img' alt="" width={211} height={212} loading='lazy'/>
+            <img className='productCardPreview' src={props.preview} alt={props.title} width={211} height={212} loading='lazy'/>
         </div>
         <div className={styles.productCardInfo}>
-            <h2 className={styles.productCardInfoTitle}>Сырный цыпленок</h2>
-            <p className={styles.productCardInfoDescr}>Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок</p>
+            <h2 className={styles.productCardInfoTitle}>{props.title}</h2>
+            {/* <div>{props.rating}</div> */}
+            <p className={styles.productCardInfoDescr}>{props.descr}</p>
             <div className={styles.productCardInfoFooter}>
-                <div className={styles.productCardInfoPrice}>395 ₽</div>
+                <div className={styles.productCardInfoPrice}>{props.price} ₽</div>
                 <div className="productCardInfoActions">
                     {/* <button className={styles.productCardInfoActionsFirstAddButton}>+ Добавить</button> */}
                     <div className={styles.productCardInfoActionsCounter}>
